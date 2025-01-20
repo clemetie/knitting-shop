@@ -709,8 +709,8 @@ footer {
     left: 50%;
     transform: translateX(-50%);
   }
-  .main-item{
-    margin-bottom: 50px;
+  .main-item {
+    margin-bottom: 60px;
   }
   .main-item h2 {
     border-top: 6px solid #20241539;
@@ -734,13 +734,16 @@ footer {
     background-size: 125px 45px;
     margin: 20px auto;
   }
+  .main-inner-bt{
+    height: 60vh;
+  }
   .main-bt,
   .main-bt2 {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
   }
-  
+
   .main-bt:first-child a img {
     position: absolute;
     top: 70px;
@@ -754,7 +757,7 @@ footer {
     right: 50%;
     transform: translateX(50%);
   }
-  .main-bt > .main-bt-txtbox > h3 ,
+  .main-bt > .main-bt-txtbox > h3,
   .main-bt2 > .main-bt-txtbox > h3 {
     width: 100%;
     position: absolute;
@@ -775,18 +778,19 @@ footer {
     left: 50%;
     transform: translateX(-50%);
   }
-  .main-bt2 > .main-bt-txtbox > p ,
+  .main-bt2 > .main-bt-txtbox > p,
   .main-bt > .main-bt-txtbox > p {
-  display: none;
+    display: none;
   }
+  .main-inner-bt {
+
+  margin-top: 30px;
+}
   .ft-txtbox > .tel {
     font-size: 24px;
-    
   }
   .ft-txtbox > address,
-  .ft-txtbox > .copy  {
+  .ft-txtbox > .copy {
     font-size: 12px;
- 
   }
-  
 }
