@@ -19,9 +19,15 @@
     <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
      페이지의 간략한 설명을 제공하는 데 사용 -->
     <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
-    <meta property="og:url" content="https://clemetie.github.io/knitting_shop/" />
+    <meta
+      property="og:url"
+      content="https://clemetie.github.io/knitting_shop/"
+    />
     <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-    <meta property="og:image" content="https://clemetie.github.io/knitting_shop/img/logo.png" />
+    <meta
+      property="og:image"
+      content="https://clemetie.github.io/knitting_shop/img/logo.png"
+    />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="Knitting 웹사이트입니다." />
     <!-- 파비콘 적용하기이 -->
@@ -82,9 +88,10 @@
         <div class="header-inner">
           <!-- 헤더 상단 -->
           <div class="header-top">
-            <a href="#" class="header-logo"
-              ><img src="img/logo.png" alt="logo" />
-            </a>
+            <div class="header-logo">
+              <a href="#"><img src="img/logo.png" alt="logo" /> </a>
+            </div>
+
             <!-- /Search/ -->
             <div class="search-bar">
               <input type="text" placeholder="Search" />
@@ -153,7 +160,7 @@
             </ul>
           </div>
           <div class="mb-xi" id="hamburger-menu">
-           <a href="#"> <i class="fa-solid fa-bars"></i></a>
+            <a href="#"> <i class="fa-solid fa-bars"></i></a>
           </div>
           <div id="mobile-nav" class="mobile-nav">
             <ul class="gnb">
@@ -161,7 +168,7 @@
                 <a href="#">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input type="text" placeholder="Search" />
-                  <i class="fa-solid fa-rectangle-xmark close" ></i>
+                  <i class="fa-solid fa-rectangle-xmark close"></i>
                 </a>
               </li>
               <li>
@@ -201,7 +208,6 @@
                 </a>
               </li>
             </ul>
-
           </div>
           <!-- 헤더 하단 -->
           <nav class="header-bt">
@@ -294,7 +300,6 @@
                     <div class="imgbox">
                       <img src="img/sample (1).png" alt="바라클라바" />
                       <div class="icon"><span>1</span></div>
-                      
                     </div>
                     <div class="txtbox">
                       <p class="item-title">
@@ -313,7 +318,6 @@
                     <div class="imgbox">
                       <img src="img/sample (7).png" alt="뜨개파우치" />
                       <div class="icon"><span>2</span></div>
-                      
                     </div>
                     <div class="txtbox">
                       <p class="item-title">뜨개파우치</p>
@@ -332,7 +336,6 @@
                     <div class="imgbox">
                       <img src="img/sample (3).png" alt="휴대폰 파우치" />
                       <div class="icon"><span>3</span></div>
-                      
                     </div>
                     <div class="txtbox">
                       <p class="item-title">휴대폰 파우치</p>
@@ -351,7 +354,6 @@
                     <div class="imgbox">
                       <img src="img/sample (4).png" alt="뜨개 키링" />
                       <div class="icon"><span>4</span></div>
-                    
                     </div>
                     <div class="txtbox">
                       <p class="item-title">뜨개 키링 <span> 5 colors</span></p>
@@ -370,7 +372,6 @@
                     <div class="imgbox">
                       <img src="img/sample (5).png" alt="트리키링" />
                       <div class="icon"><span>5</span></div>
-                      
                     </div>
                     <div class="txtbox">
                       <p class="item-title">트리키링 <span> 2 colors</span></p>
@@ -400,7 +401,6 @@
                     <div class="imgbox">
                       <img src="img/sample (8).png" alt="바라클라바" />
                       <div class="icon"><span>1</span></div>
-                      
                     </div>
                     <div class="txtbox">
                       <p class="item-title">
@@ -421,7 +421,6 @@
                     <div class="imgbox">
                       <img src="img/sample (6).png" alt="뜨개파우치" />
                       <div class="icon"><span>2</span></div>
-                     
                     </div>
                     <div class="txtbox">
                       <p class="item-title">뜨개파우치</p>
@@ -440,7 +439,6 @@
                     <div class="imgbox">
                       <img src="img/sample (3).png" alt="휴대폰 파우치" />
                       <div class="icon"><span>3</span></div>
-                    
                     </div>
                     <div class="txtbox">
                       <p class="item-title">휴대폰 파우치</p>
@@ -459,7 +457,6 @@
                     <div class="imgbox">
                       <img src="img/sample (7).png" alt="뜨개 키링" />
                       <div class="icon"><span>4</span></div>
-                     
                     </div>
                     <div class="txtbox">
                       <p class="item-title">뜨개 키링 <span> 5 colors</span></p>
@@ -478,7 +475,6 @@
                     <div class="imgbox">
                       <img src="img/sample (5).png" alt="트리키링" />
                       <div class="icon"><span>5</span></div>
-                     
                     </div>
                     <div class="txtbox">
                       <p class="item-title">트리키링 <span> 2 colors</span></p>
@@ -569,7 +565,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".bestSwiper", {
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         spaceBetween: 30,
         //   스와이프 콘텐츠 사이의 간격
         rewind: true,
@@ -590,8 +586,8 @@
         },
       });
       var swiper = new Swiper(".visualSwiper", {
-        spaceBetween: 30,
         centeredSlides: true,
+        roop: true,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
@@ -602,8 +598,9 @@
         },
       });
       var swiper = new Swiper(".mobileSwiper", {
-        spaceBetween: 30,
         centeredSlides: true,
+        Loop: true,
+        rewind: true,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
