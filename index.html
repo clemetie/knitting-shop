@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- seo 엔진 최적화 -->
+    <!-- 웹페이지의 설명을 정의 -->
+    <meta name="description" content="Knitting 웹사이트입니다." />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta name="keywords" content="Knitting, Knit Controuctor" />
+    <!-- 웹페이지의 저자를 정의  -->
+    <meta name="author" content="Knitting" />
+    <!-- 소셜 미디어에서 페이지가 공유될때 사용되는 제목 -->
+    <meta property="og:title" content="Knitting~" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="Knitting 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
+     페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta property="og:url" content="https://github.io/" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <meta property="og:image" content="img/main.banner1.png" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta property="og:description" content="Knitting 웹사이트입니다." />
+    <!-- 파비콘 적용하기이 -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="img/icon/favicon.svg" />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="img/icon/site.webmanifest" />
+    <!-- css초기화 구글에 파일 있음 cdn도 있다-->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- 리셋 css 먼저 링크 걸고 내 css 링크 걸어야 함  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 폰트어썸 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js연결 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/knit.js"></script>
+    <title>Knitting~</title>
+  </head>
+  <body>
+    <!-- 전체 -->
+    <div class="container">
+      <!-- 상단 -->
+      <div class="header-bar"></div>
+      <header>
+        <div class="header-inner">
+          <!-- 헤더 상단 -->
+          <div class="header-top">
+            <a href="#" class="header-logo"
+              ><img src="img/logo.png" alt="logo" />
+            </a>
+            <!-- /Search/ -->
+            <div class="search-bar">
+              <input type="text" placeholder="Search" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="mypage">
+              <ul class="my-list">
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>Log In</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-receipt"></i>
+                    <p>Order</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <p>My Page</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>Shop</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="tablet-my-list">
+              <li>
+                <a href="#">
+                  <p>Log In</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Order</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>My Page</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Cart</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Shop</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-xi" id="hamburger-menu">
+           <a href="#"> <i class="fa-solid fa-bars"></i></a>
+          </div>
+          <div id="mobile-nav" class="mobile-nav">
+            <ul class="gnb">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" placeholder="Search" />
+                  <i class="fa-solid fa-rectangle-xmark close" ></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-right-to-bracket"></i>
+                  <p>Log In</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-receipt"></i>
+                  <p>Order</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-user"></i>
+                  <p>My Page</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Cart</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p>Shop</p>
+                </a>
+              </li>
+              <li class="close">
+                <a href="#">
+                  <i class="fa-solid fa-rectangle-xmark"></i>
+                  <p>close</p>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- 헤더 하단 -->
+          <nav class="header-bt">
+            <ul class="menu-list">
+              <li><a href="#">New</a></li>
+              <li><a href="#">Best</a></li>
+              <li><a href="#">All</a></li>
+              <li><a href="#">Review</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- 메인 -->
+      <main>
+        <div class="main-inner">
+          <!-- 메인 베너 1 -->
+          <div class="swiper mobileSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="img/phone.banner.png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/mobilebanner (1).png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/mobilebanner (2).png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/mobilebanner (3).png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper visualSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="img/main.banner1.png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/mainbanner2.png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/mainbanner3.png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/mainbanner4.png"
+                  alt="메인베너이미지"
+                  class="banner1"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- 베스트메뉴 -->
+          <div class="main-item">
+            <h2>Best Item</h2>
+            <div class="swiper bestSwiper">
+              <ul class="swiper-wrapper main-item-list">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (1).png" alt="바라클라바" />
+                      <div class="icon"><span>1</span></div>
+                      
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                  <div class="caption">
+                    <p class="item-title">바라클라바 <span> 3 colors</span></p>
+                    <span class="price">12,500원</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (7).png" alt="뜨개파우치" />
+                      <div class="icon"><span>2</span></div>
+                      
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">뜨개파우치</p>
+                      <span class="price">10,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (3).png" alt="휴대폰 파우치" />
+                      <div class="icon"><span>3</span></div>
+                      
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">휴대폰 파우치</p>
+                      <span class="price">12,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (4).png" alt="뜨개 키링" />
+                      <div class="icon"><span>4</span></div>
+                    
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">뜨개 키링 <span> 5 colors</span></p>
+                      <span class="price">5,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (5).png" alt="트리키링" />
+                      <div class="icon"><span>5</span></div>
+                      
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">트리키링 <span> 2 colors</span></p>
+                      <span class="price">9,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <button></button>
+          </div>
+          <!-- 신상품 -->
+          <div class="main-item">
+            <h2>New Arrival</h2>
+            <div class="swiper bestSwiper">
+              <ul class="swiper-wrapper main-item-list">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (8).png" alt="바라클라바" />
+                      <div class="icon"><span>1</span></div>
+                      
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (6).png" alt="뜨개파우치" />
+                      <div class="icon"><span>2</span></div>
+                     
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">뜨개파우치</p>
+                      <span class="price">10,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (3).png" alt="휴대폰 파우치" />
+                      <div class="icon"><span>3</span></div>
+                    
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">휴대폰 파우치</p>
+                      <span class="price">12,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (7).png" alt="뜨개 키링" />
+                      <div class="icon"><span>4</span></div>
+                     
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">뜨개 키링 <span> 5 colors</span></p>
+                      <span class="price">5,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <div class="imgbox">
+                      <img src="img/sample (5).png" alt="트리키링" />
+                      <div class="icon"><span>5</span></div>
+                     
+                    </div>
+                    <div class="txtbox">
+                      <p class="item-title">트리키링 <span> 2 colors</span></p>
+                      <span class="price">9,500원</span>
+                    </div>
+                    <div class="caption">
+                      <p class="item-title">
+                        바라클라바 <span> 3 colors</span>
+                      </p>
+                      <span class="price">12,500원</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <button></button>
+          </div>
+        </div>
+        <!-- 메인 배너 2 -->
+        <div class="banner">
+          <a href="#" class="banner2"
+            ><img src="img/main.banner2.png" alt="배너2"
+          /></a>
+        </div>
+        <div class="main-inner-bt">
+          <!-- 메인 유튜브 -->
+          <div class="main-bt">
+            <a href="#"><img src="img/howto.png" alt="유튜브" /></a>
+            <div class="main-bt-txtbox">
+              <h3>How To knitting?</h3>
+              <p class="main-bt-txt">
+                Lorem ipsum dolor sit amet consectetur,adipisicing elit. Nihil
+                ullam corrupti ipsum architecto assumenda doloremque hic rem
+                labore saepe impedit quae, iste voluptates unde autem dolores
+                quasi vero, perferendis consequatur?
+              </p>
+            </div>
+          </div>
+          <!-- 메인 리뷰 -->
+          <div class="main-bt2">
+            <a href="#"><img src="img/review.png" alt="리뷰" /></a>
+            <div class="main-bt-txtbox">
+              <h3>Review</h3>
+              <img src="img/star5.png" alt="별!" />
+              <p class="main-bt-txt">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                ullam corrupti ipsum architecto assumenda doloremque hic rem
+                labore saepe impedit quae, iste voluptates unde autem dolores
+                quasi vero, perferendis consequatur?
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- 하단 -->
+      <footer>
+        <div class="footer-inner">
+          <div class="ft-left">
+            <div class="ft-logo">
+              <a href="#"><img src="img/logo.png" alt="로고" /></a>
+            </div>
+            <div class="ft-txtbox">
+              <p class="tel">02-1234-1234</p>
+              <address>
+                예금주:(주)뜨개생활연구소 1210-654-65486 우리은행 <br />
+                주식회사뜨개생활연구소 I 서울특별시 마포구 집에 가고 싶어요
+              </address>
+              <p class="copy">ⓒ knitting online ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+
+          <div class="ft-quick">
+            <h2>Shopping Quick</h2>
+            <ul class="quick-list">
+              <li><a href="#">Log Out</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="#">My Page</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".bestSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        //   스와이프 콘텐츠 사이의 간격
+        rewind: true,
+        // 마지막 스와이프에서 처음으로 슝 ~
+        Loop: true,
+        breakpoints: {
+          390: {
+            slidesPerView: 2.5,
+          },
+
+          768: {
+            slidesPerView: 3.5,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".visualSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".mobileSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
