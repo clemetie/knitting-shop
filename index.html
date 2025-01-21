@@ -217,13 +217,19 @@
       <!-- 메인 -->
       <main>
         <div class="main-inner">
+          <div class="top-btn-wrap">
+            <a href="#" class="snowman">
+              <img src="img/snowman.png" alt="snowman" />
+              <span>나도 데려가 . .  ❄</span>
+            </a>
+          </div>
           <!-- 메인 베너 1 -->
           <div class="swiper mobileSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
-                  src="img/phone.banner.png"
-                  alt="메인베너이미지"
+                src="img/phone.banner.png"
+                alt="메인베너이미지"
                   class="banner1"
                 />
               </div>
@@ -490,10 +496,15 @@
           </div>
         </div>
         <!-- 메인 배너 2 -->
-        <div class="banner">
-          <a href="#" class="banner2"
-            ><img src="img/main.banner2.png" alt="배너2"
-          /></a>
+        <div class="banner2">
+<div class="fixed-txt">
+  <h3 class="main-title">뜨개 모임</h3>
+  <p>일주일에 하루. <br>
+    매주 목요일 저녁 야트막에서 뜨개질모임이 열립니다.</p>
+    <a href="#">
+      <span>신청하기 </span>
+    </a>
+</div>
         </div>
         <div class="main-inner-bt">
           <!-- 메인 유튜브 -->
@@ -559,7 +570,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".bestSwiper", {
-        slidesPerView: 1.5,
+        slidesPerView: 2.5,
         spaceBetween: 30,
         //   스와이프 콘텐츠 사이의 간격
         rewind: true,
@@ -595,6 +606,7 @@
         centeredSlides: true,
         Loop: true,
         rewind: true,
+        spaceBetween:20,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
