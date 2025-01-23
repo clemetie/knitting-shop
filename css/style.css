@@ -356,9 +356,8 @@ body {
 /* 메인 하단 */
 .main-inner-bt {
   width: 100%;
-  margin-top: 70px;
-  height: 80vw;
-  margin-bottom: 20px;
+  height: 70vw;
+  margin-top: 10px;
 }
 .main-inner-bt img {
   width: 50%;
@@ -369,6 +368,7 @@ body {
   display: block;
   width: 100%;
   height: calc(100% / 2);
+  margin-bottom: 10px;
 }
 .main-bt:first-child a img {
   position: absolute;
