@@ -55,7 +55,7 @@ window.onload = function(){
       768: {
         slidesPerView: 3.5,
         grid: {
-          rows: 1, // 행: 2개
+          rows: 1, // 행: 1개
         },
       },
     },
@@ -88,6 +88,27 @@ window.onload = function(){
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+  });
+  var swiper = new Swiper(".btbannerSwiper", {
+    centeredSlides: true,
+    Loop: true,
+    rewind: true,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper = new Swiper(".barSwiper", {
+    direction: "vertical",
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
   });
 }

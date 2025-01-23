@@ -47,9 +47,9 @@
     <link rel="manifest" href="img/icon/site.webmanifest" />
     <!-- css초기화 구글에 파일 있음 cdn도 있다-->
     <link rel="stylesheet" href="css/reset.css" />
-
     <!-- 리셋 css 먼저 링크 걸고 내 css 링크 걸어야 함  -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/respon.css" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -83,7 +83,26 @@
     <!-- 전체 -->
     <div class="container">
       <!-- 상단 -->
-      <div class="header-bar"></div>
+      <div class="header-bar">
+        <div class="swiper barSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">▶ [모집] 뜨개 모임, 매주 목요일 19시</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">▶ [공유] 눈사람 뜨개 키링 도안 무료 공유 중 !</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                >▶ [모집] 2월 10일 영화관에서 영화 보면서 뜨개 하실 분🎬</a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a href="#">▶ [공지] 설 연휴 배송 마감 안내🚚</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <header>
         <div class="header-inner">
           <!-- 헤더 상단 -->
@@ -219,6 +238,7 @@
       <!-- 메인 -->
       <main>
         <div class="main-inner">
+          <!-- 눈사람 -->
           <div class="top-btn-wrap">
             <a href="#" class="snowman">
               <img src="img/snowman.png" alt="snowman" />
@@ -409,7 +429,7 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <button></button>
+            <a href="#" class="more">More +</a>
           </div>
           <!-- 신상품 -->
           <div class="main-item">
@@ -530,21 +550,57 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <button></button>
+            <a href="#" class="more">More +</a>
           </div>
         </div>
         <!-- 메인 배너 2 -->
-        <div class="banner2">
-          <div class="fixed-txt">
-            <h3 class="main-title">뜨개 모임</h3>
-            <p>
-              일주일에 하루, 작은 재주를 모아
-            </p>
-            <a href="#">
-              <span>신청하기 </span>
-            </a>
+        <div class="main-bt-banner">
+          <div class="banner2"></div>
+          <div class="swiper btbannerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide inner">
+                <!-- 텍스트 수정 -->
+                <div class="t01_2" style="color: #000000">Notice</div>
+                <div class="t02">뜨개 시사회 이벤트</div>
+                <div class="txt_line"></div>
+                <div class="t03">
+                  2월 10일 20:00 영화관에서 영화 보면서 뜨개 하실 분🎬
+                </div>
+
+                <br />
+                <a href="#" class="button">MORE</a>
+                <!-- 텍스트 수정 -->
+              </div>
+              <div class="swiper-slide inner">
+                <!-- 텍스트 수정 -->
+                <div class="t01_2" style="color: #000000">Notice</div>
+                <div class="t02">오프라인 수업 / 파주반 개설</div>
+                <div class="txt_line"></div>
+                <div class="t03">
+                  ✔️취미반 <br> 토요일 오전반 2월 1일 개강 10주과정 10:00-12:00
+                </div>
+
+                <br />
+                <a href="#" class="button">MORE</a>
+                <!-- 텍스트 수정 -->
+              </div>
+              <div class="swiper-slide inner">
+                <!-- 텍스트 수정 -->
+                <div class="t01_2" style="color: #000000">PRODUCT</div>
+                <div class="t02">털실타래 Vol.10 겨울호☃️</div>
+                <div class="txt_line"></div>
+                <div class="t03">
+                  활용도 높은 코바늘, 대바늘 작품들이 가득 수록되었어요.
+                </div>
+
+                <br />
+                <a href="#" class="button">MORE</a>
+                <!-- 텍스트 수정 -->
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="main-inner-bt">
           <!-- 메인 유튜브 -->
           <div class="main-bt">
@@ -553,7 +609,7 @@
               <h3>How To knitting?</h3>
               <p class="main-bt-txt">
                 Lorem ipsum dolor sit amet consectetur,adipisicing elit. Nihil
-                ullam corrupti ipsum architecto assumenda 
+                ullam corrupti ipsum architecto assumenda
               </p>
             </div>
           </div>
@@ -562,10 +618,10 @@
             <a href="#"><img src="img/review.png" alt="리뷰" /></a>
             <div class="main-bt-txtbox">
               <h3>Review</h3>
-              <img src="img/star5.png" alt="별!" />
+
               <p class="main-bt-txt">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-                ullam corrupti ipsum architecto assumenda 
+                ullam corrupti ipsum architecto assumenda
               </p>
             </div>
           </div>
@@ -581,8 +637,10 @@
             <div class="ft-txtbox">
               <p class="tel">02-1234-1234</p>
               <address>
-                예금주:(주)뜨개생활연구소 <br class="mobile-ft"> 1210-654-65486 우리은행 <br />
-                주식회사뜨개생활연구소 I <br class="mobile-ft">  서울특별시 마포구 집에 가고 싶어요
+                예금주:(주)뜨개생활연구소 <br class="mobile-ft" />
+                1210-654-65486 우리은행 <br />
+                주식회사뜨개생활연구소 I <br class="mobile-ft" />
+                서울특별시 마포구 집에 가고 싶어요
               </address>
               <p class="copy">ⓒ knitting online ALL RIGHTS RESERVED.</p>
             </div>

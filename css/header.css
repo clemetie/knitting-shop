@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* 상단 */
+header {
+  width: 100%;
+  height: 200px;
+}
+.header-bar {
+  width: 100%;
+  height: 3vh;
+  background-color: #fcf1d1;
+  position: relative;
+}
+
+.barSwiper .swiper-slide {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0.75vh;
+  font-size: 1vh;
+  font-weight: bold;
+  color: #333;
+}
+.header-inner {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 1280px;
+  height: 100%;
+}
+/* 눈사람 버튼 */
+.top-btn-wrap {
+  width: 150px;
+  height: 60px;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  z-index: 9;
+}
+.top-btn-wrap a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: grab;
+}
+.top-btn-wrap a img {
+  width: 100%;
+  height: 100%;
+}
+.snowman {
+  animation: updown 1.5s infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.snowman span {
+  position: fixed;
+  top: -35px;
+  white-space: nowrap;
+  padding: 8px 10px;
+  background-color: #fff;
+  border-radius: 23px;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+/* 상단-top */
+.header-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 58px;
+  width: 100%;
+  height: 120px;
+  padding: 0 10px;
+}
+/* 헤더-로고 */
+.header-logo {
+  width: 30%;
+  text-align: center;
+  padding: 10px 10px;
+}
+.header-logo a img {
+  width: 100%;
+  object-fit: cover;
+}
+/* search */
+.search-bar {
+  width: 30%;
+  /* 높이 값 없습니다 !  */
+  max-width: 560px;
+  /* 560px 이상으로 커지지 않음 */
+  min-width: 320px;
+  /* 320px 이하로 작아지지 않음 */
+  max-height: 40%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+}
+.search-bar input {
+  width: 80%;
+  padding: 5px;
+  border: none;
+  /* 그냥 테두리 없애기 */
+  outline: none;
+  /* 텍스트 적을 때 보이는 테두리 없애기  */
+}
+.search-bar i {
+  font-size: 20px;
+  color: #454545;
+}
+/* 데스크탑 마이페이지 */
+.mypage {
+  width: 30%;
+  height: 100%;
+  padding: 21px 0;
+  position: relative;
+}
+.mypage ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+}
+.mypage li {
+  width: calc(100% / 6);
+  line-height: 2;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.mypage li i {
+  font-size: 20px;
+}
+/* 태블릿 마이페이지 */
+.tablet-my-list {
+  display: none;
+}
+/* 모바일 마이페이지*/
+.mb-xi {
+  display: none;
+}
+.container {
+  overflow: hidden;
+}
+
+.mobile-nav {
+  width: 200px;
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -300px;
+  background-color: #fcf1d1;
+  z-index: 999;
+}
+.mobile-nav li:nth-child(even) {
+  background-color: #fff;
+}
+
+.mobile-nav .gnb > li > a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20px;
+  color: #333;
+}
+.mobile-nav .gnb > li > a > i {
+  width: 10%;
+  text-align: center;
+
+  object-fit: cover;
+  font-size: 16px;
+}
+.mobile-nav .gnb > li > a > p {
+  width: 70%;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.mobile-nav li:first-child a {
+  padding: 10px 20px;
+  gap: 10px;
+}
+.mobile-nav li:first-child input {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+}
+
+/* 상단-bt */
+.header-bt {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+.header-bt ul {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.menu-list {
+  width: 80%;
+  min-width: 20%;
+  margin: auto;
+}
+.menu-list li {
+  font-size: 24px;
+  font-weight: bold;
+}
+.menu-list li a {
+  background: linear-gradient(to top, #fcf1d1 80%, transparent 50%);
+}
