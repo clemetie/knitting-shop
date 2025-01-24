@@ -182,7 +182,7 @@
             <a href="#"> <i class="fa-solid fa-bars"></i></a>
           </div>
           <div class="mobile-wrap">
-            <i class="fa-solid fa-rectangle-xmark close"></i>
+            <i class="fa-solid fa-rectangle-xmark close mobile-nav"></i>
             <div id="mobile-nav" class="mobile-nav">
               <ul class="gnb">
               
@@ -229,10 +229,10 @@
           <!-- 헤더 하단 -->
           <nav class="header-bt">
             <ul class="menu-list">
-              <li><a href="#">Best</a></li>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Notice</a></li>
-              <li><a href="#">Review</a></li>
+              <li class="best-tab"><a href="#">Best</a></li>
+              <li class="new-tab"><a href="#">New</a></li>
+              <li class="notice-tab"><a href="#">Notice</a></li>
+              <li class="review-tab"><a href="#">Review</a></li>
             </ul>
           </nav>
         </div>
@@ -315,7 +315,7 @@
             <div class="swiper-pagination"></div>
           </div>
           <!-- 베스트메뉴 -->
-          <div class="main-item">
+          <div class="main-item" id="best">
             <h2>Best Item</h2>
             <div class="swiper bestSwiper">
               <ul class="swiper-wrapper main-item-list">
@@ -400,7 +400,7 @@
             <a href="#" class="more">More</a>
           </div>
           <!-- 신상품 -->
-          <div class="main-item">
+          <div class="main-item" id="new">
             <h2>New Arrival</h2>
             <div class="swiper bestSwiper">
               <ul class="swiper-wrapper main-item-list">
@@ -486,7 +486,7 @@
           </div>
         </div>
         <!-- 메인 배너 2 -->
-        <div class="main-bt-banner">
+        <div class="main-bt-banner" id="notice">
           <div class="banner2"></div>
           <div class="swiper btbannerSwiper">
             <div class="swiper-wrapper">
@@ -534,7 +534,7 @@
         </div>
         <!-- 리뷰 -->
         <div class="main-inner">
-          <div class="review">
+          <div class="review" id="review">
             <h2 class="t02">Best Review</h2>
 
             <ul class="review-box">

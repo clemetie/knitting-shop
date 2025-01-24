@@ -111,4 +111,48 @@ window.onload = function(){
       disableOnInteraction: false,
     },
   });
+  const BestBt = document.querySelector(".best-tab");
+  BestBt.addEventListener("click", function () {
+   
+    scrollToSection("#best");
+  });
+  function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+  const NewBt = document.querySelector(".new-tab");
+  NewBt.addEventListener("click", function () {
+   
+    scrollToSection("#new");
+  });
+  function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+  const NoticeBt = document.querySelector(".notice-tab");
+  NoticeBt.addEventListener("click", function () {
+   
+    scrollToSection("#notice");
+  });
+  function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+  const ReviewBt = document.querySelector(".review-tab");
+  ReviewBt.addEventListener("click", function () {
+   
+    scrollToSection("#review");
+  });
+  function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 }
