@@ -70,6 +70,11 @@
       href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- xeicon연결 -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <!-- js연결 -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
@@ -185,8 +190,6 @@
             <i class="fa-solid fa-rectangle-xmark close mobile-nav"></i>
             <div id="mobile-nav" class="mobile-nav">
               <ul class="gnb">
-              
-
                 <li>
                   <a href="#">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -241,6 +244,9 @@
       <main>
         <div class="main-inner">
           <!-- 눈사람 -->
+          <a href="#" class="top-btn">
+            <i class="fa-solid fa-caret-up"></i>
+          </a>
           <div class="top-btn-wrap">
             <a href="#" class="snowman">
               <img src="img/snowman.png" alt="snowman" />
@@ -408,7 +414,6 @@
                   <a href="#">
                     <div class="imgbox">
                       <img src="img/sample (8).png" alt="바라클라바" />
-                      <div class="icon"><span>1</span></div>
                     </div>
                     <div class="txtbox">
                       <p class="item-title">
@@ -422,7 +427,6 @@
                   <a href="#">
                     <div class="imgbox">
                       <img src="img/sample (6).png" alt="뜨개파우치" />
-                      <div class="icon"><span>2</span></div>
                     </div>
                     <div class="txtbox">
                       <p class="item-title">뜨개파우치</p>
@@ -434,7 +438,6 @@
                   <a href="#">
                     <div class="imgbox">
                       <img src="img/sample (3).png" alt="휴대폰 파우치" />
-                      <div class="icon"><span>3</span></div>
                     </div>
                     <div class="txtbox">
                       <p class="item-title">휴대폰 파우치</p>
@@ -446,7 +449,6 @@
                   <a href="#">
                     <div class="imgbox">
                       <img src="img/sample (7).png" alt="뜨개 키링" />
-                      <div class="icon"><span>4</span></div>
                     </div>
                     <div class="txtbox">
                       <p class="item-title">뜨개 키링 <span> 5 colors</span></p>
@@ -458,7 +460,6 @@
                   <a href="#">
                     <div class="imgbox">
                       <img src="img/sample (5).png" alt="트리키링" />
-                      <div class="icon"><span>5</span></div>
                     </div>
                     <div class="txtbox">
                       <p class="item-title">트리키링 <span> 2 colors</span></p>
@@ -470,7 +471,6 @@
                   <a href="#">
                     <div class="imgbox">
                       <img src="img/sample (6).png" alt="트리키링" />
-                      <div class="icon"><span>6</span></div>
                     </div>
                     <div class="txtbox">
                       <p class="item-title">트리키링 <span> 2 colors</span></p>
@@ -545,18 +545,22 @@
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
                 <div class="product-area">
                   <div class="thumb">
                     <a href="#" class="">
-                      <img src="img/sample (5).png" border="0" alt="">
+                      <img src="img/sample (5).png" border="0" alt="" />
                     </a>
                   </div>
                   <div class="name">
                     <a href="#">[뜨개 제품] 뜨개티코스터</a>
-                  </div></div>
+                  </div>
+                </div>
               </li>
               <li class="review-content">
                 <a href="#">
@@ -565,10 +569,22 @@
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
-                <div class="product-area"><div class="thumb"><a href="#" class=""><img src="img/sample (8).png" border="0" alt=""></a></div><div class="name"><a href="#">[뜨개 제품] 뜨개티코스터</a></div></div>
+                <div class="product-area">
+                  <div class="thumb">
+                    <a href="#" class=""
+                      ><img src="img/sample (8).png" border="0" alt=""
+                    /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#">[뜨개 제품] 뜨개티코스터</a>
+                  </div>
+                </div>
               </li>
               <li class="review-content">
                 <a href="#">
@@ -577,10 +593,22 @@
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
-                <div class="product-area"><div class="thumb"><a href="#" class=""><img src="img/sample (5).png" border="0" alt=""></a></div><div class="name"><a href="#">[뜨개 제품] 뜨개티코스터</a></div></div>
+                <div class="product-area">
+                  <div class="thumb">
+                    <a href="#" class=""
+                      ><img src="img/sample (5).png" border="0" alt=""
+                    /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#">[뜨개 제품] 뜨개티코스터</a>
+                  </div>
+                </div>
               </li>
               <li class="review-content">
                 <a href="#">
@@ -589,10 +617,22 @@
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
-                <div class="product-area"><div class="thumb"><a href="#" class=""><img src="img/sample (7).png" border="0" alt=""></a></div><div class="name"><a href="#">[뜨개 제품] 뜨개티코스터</a></div></div>
+                <div class="product-area">
+                  <div class="thumb">
+                    <a href="#" class=""
+                      ><img src="img/sample (7).png" border="0" alt=""
+                    /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#">[뜨개 제품] 뜨개티코스터</a>
+                  </div>
+                </div>
               </li>
               <li class="review-content">
                 <a href="#">
@@ -601,10 +641,22 @@
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
-                <div class="product-area"><div class="thumb"><a href="#" class=""><img src="img/sample (4).png" border="0" alt=""></a></div><div class="name"><a href="#">[뜨개 제품] 뜨개티코스터</a></div></div>
+                <div class="product-area">
+                  <div class="thumb">
+                    <a href="#" class=""
+                      ><img src="img/sample (4).png" border="0" alt=""
+                    /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#">[뜨개 제품] 뜨개티코스터</a>
+                  </div>
+                </div>
               </li>
               <li class="review-content mobile-none">
                 <a href="#">
@@ -613,22 +665,46 @@
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
-                <div class="product-area"><div class="thumb"><a href="#" class=""><img src="img/sample (1).png" border="0" alt=""></a></div><div class="name"><a href="#">[뜨개 제품] 뜨개티코스터</a></div></div>
+                <div class="product-area">
+                  <div class="thumb">
+                    <a href="#" class=""
+                      ><img src="img/sample (1).png" border="0" alt=""
+                    /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#">[뜨개 제품] 뜨개티코스터</a>
+                  </div>
+                </div>
               </li>
-              <li class="review-content  mobile-none">
+              <li class="review-content mobile-none">
                 <a href="#">
                   <div class="reviewimgbox">
                     <img src="img/sample (1).png" alt="바라클라바" />
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
-                <div class="product-area"><div class="thumb"><a href="#" class=""><img src="img/sample (1).png" border="0" alt=""></a></div><div class="name"><a href="#">[뜨개 제품] 뜨개티코스터</a></div></div>
+                <div class="product-area">
+                  <div class="thumb">
+                    <a href="#" class=""
+                      ><img src="img/sample (1).png" border="0" alt=""
+                    /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#">[뜨개 제품] 뜨개티코스터</a>
+                  </div>
+                </div>
               </li>
               <li class="review-content">
                 <a href="#">
@@ -637,10 +713,22 @@
                   </div>
                   <div class="reviewtxtbox">
                     <p class="item-title">★★★★★ <span>2025-01-24</span></p>
-                    <span class="ment">고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게 떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span>
+                    <span class="ment"
+                      >고등학생 딸이 뜰 수 있을거 같다고 해서 샀는데 제법 예쁘게
+                      떠서 기특합니다. 초보가 도전해보기에 좋은거 같아요.</span
+                    >
                   </div>
                 </a>
-                <div class="product-area"><div class="thumb"><a href="#" class=""><img src="img/sample (5).png" border="0" alt=""></a></div><div class="name"><a href="#">[뜨개 제품] 뜨개티코스터</a></div></div>
+                <div class="product-area">
+                  <div class="thumb">
+                    <a href="#" class=""
+                      ><img src="img/sample (5).png" border="0" alt=""
+                    /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#">[뜨개 제품] 뜨개티코스터</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>

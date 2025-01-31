@@ -34,6 +34,66 @@ body {
   margin: auto;
   max-width: 1280px;
 }
+/* 눈사람 버튼 */
+.top-btn-wrap {
+  width: 150px;
+  height: 60px;
+  position: fixed;
+  right: 3%;
+  bottom: 20%;
+  z-index: 9;
+}
+.top-btn-wrap a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: grab;
+}
+.top-btn-wrap a img {
+  width: 100%;
+  height: 100%;
+}
+.snowman {
+  animation: updown 1.5s infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.snowman span {
+  position: fixed;
+  top: -35px;
+  white-space: nowrap;
+  padding: 8px 10px;
+  background-color: #fff;
+  border-radius: 23px;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+.top-btn {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 3px double #888;
+  font-size: 5rem;
+  color: #888;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgb(0, 0, 0, 0.8);
+  z-index: 9;
+  position: fixed;
+  right: 5%;
+  bottom: 2%;
+}
+/* 상품 텍스트 */
 .txtbox {
   display: flex;
   flex-direction: column;
@@ -156,6 +216,7 @@ body {
   letter-spacing: -0.3px;
   white-space: nowrap;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 /* 슬라이드 버튼 */
@@ -345,7 +406,7 @@ body {
   width: 100%;
 }
 .review h2 {
-  padding: 40px;
+  padding: 60px;
   font-size: 3.5rem;
   text-align: center;
   font-weight: bold;
@@ -356,6 +417,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
+  margin-bottom: 70px;
 }
 .review-content {
   width: calc((100% - 6%) / 4);
@@ -365,7 +427,6 @@ body {
 }
 .review-content img {
   width: 100%;
-  
 }
 .reviewtxtbox {
   display: flex;
@@ -374,15 +435,15 @@ body {
   gap: -5px;
   height: 15%;
 }
-.reviewtxtbox .item-title{
+.reviewtxtbox .item-title {
   font-size: 1.5rem;
   color: burlywood;
 }
-.reviewtxtbox span{
+.reviewtxtbox span {
   font-size: 1.2rem;
   color: #202415bd;
 }
-.reviewtxtbox .ment{
+.reviewtxtbox .ment {
   font-size: 1.2rem;
   line-height: 1.3rem;
   color: #666;
@@ -398,14 +459,14 @@ body {
   box-sizing: border-box;
 }
 
-.product-area  .thumb img{
+.product-area .thumb img {
   height: 5vw;
   width: auto;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
   border-radius: 3px;
 }
-.product-area .name a{
+.product-area .name a {
   display: block;
   width: 100%;
   font-size: 1rem;

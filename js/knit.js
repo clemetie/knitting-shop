@@ -32,7 +32,7 @@ $(document).ready(function () {
     }
   });
 });
-window.onload = function(){
+window.onload = function () {
   var swiper = new Swiper(".bestSwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
@@ -49,7 +49,6 @@ window.onload = function(){
         grid: {
           rows: 2, // 행: 2개
         },
-       
       },
 
       768: {
@@ -93,7 +92,6 @@ window.onload = function(){
   var swiper = new Swiper(".btbannerSwiper", {
     centeredSlides: true,
     Loop: true,
-    rewind: true,
     spaceBetween: 20,
     autoplay: {
       delay: 2500,
@@ -113,7 +111,6 @@ window.onload = function(){
   });
   const BestBt = document.querySelector(".best-tab");
   BestBt.addEventListener("click", function () {
-   
     scrollToSection("#best");
   });
   function scrollToSection(sectionId) {
@@ -124,7 +121,6 @@ window.onload = function(){
   }
   const NewBt = document.querySelector(".new-tab");
   NewBt.addEventListener("click", function () {
-   
     scrollToSection("#new");
   });
   function scrollToSection(sectionId) {
@@ -135,7 +131,6 @@ window.onload = function(){
   }
   const NoticeBt = document.querySelector(".notice-tab");
   NoticeBt.addEventListener("click", function () {
-   
     scrollToSection("#notice");
   });
   function scrollToSection(sectionId) {
@@ -146,7 +141,6 @@ window.onload = function(){
   }
   const ReviewBt = document.querySelector(".review-tab");
   ReviewBt.addEventListener("click", function () {
-   
     scrollToSection("#review");
   });
   function scrollToSection(sectionId) {
@@ -155,4 +149,13 @@ window.onload = function(){
       section.scrollIntoView({ behavior: "smooth" });
     }
   }
-}
+  const topBtn = document.querySelector(".top-btn");
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    // a href#은 가장 위로 가면서 새로고침하는 기본 event가 있는데 기본 event를 default 없애주는 함수
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+};
