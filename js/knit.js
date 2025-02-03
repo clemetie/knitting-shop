@@ -109,6 +109,7 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
+ 
   const BestBt = document.querySelector(".best-tab");
   BestBt.addEventListener("click", function () {
     scrollToSection("#best");
@@ -159,3 +160,4 @@ window.onload = function () {
     });
   });
 };
+

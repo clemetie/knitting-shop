@@ -6,17 +6,16 @@ header {
 }
 .header-bar {
   width: 100%;
-  height: 3vh;
+  height: 1.5vw;
   background-color: #fcf1d1;
   position: relative;
 }
 
-.barSwiper .swiper-slide {
+.barSwiper .swiper-slide{
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 0.75vh;
-  font-size: 1vh;
+  padding-top: 0.25vw;
   font-weight: bold;
   color: #333;
 }
@@ -103,14 +102,34 @@ header {
 .mypage li i {
   font-size: 2rem;
 }
-.mobile-wrap{
-  
-}
 
 /* 태블릿 마이페이지 */
 .tablet-my-list {
-  display: none;
+  display: none !important;
 }
+.tablet-my-list {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0 10px 0;
+  height: calc(100% / 2);
+}
+.tablet-my-list li {
+  white-space: nowrap;
+  font-size: 16px;
+  height: 30%;
+  padding: 0px 20px;
+  border-left: 1px solid #202415c8;
+  text-align: center;
+}
+.tablet-my-list li:last-child {
+  border-right: 1px solid #202415c8;
+}
+.tablet-my-list li a {
+  color: #202415c8;
+}
+
 /* 모바일 마이페이지*/
 .mb-xi {
   display: none;
@@ -130,7 +149,7 @@ header {
   background-color: #fcf1d1;
   z-index: 999;
 }
-.mobile-wrap .close{
+.mobile-wrap .close {
   display: none;
 }
 .mobile-nav li:nth-child(even) {

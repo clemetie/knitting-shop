@@ -18,8 +18,11 @@
   .mypage {
     display: none;
   }
+  .tablet-my-list{
+    display: block;
+  }
   .tablet-my-list {
-    display: flex;
+    display: flex !important;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -40,8 +43,6 @@
   .tablet-my-list li a {
     color: #202415c8;
   }
-
-
 
   .main-inner-bt {
     width: 100%;
@@ -74,7 +75,7 @@
     overflow: hidden;
     margin: 1% 0;
   }
-  
+
   .ft-quick li {
     width: 100%;
     text-align: right;
@@ -85,10 +86,10 @@
 }
 @media screen and (max-width: 685px) {
   html {
-    font-size: 7px;
+    font-size: 8px;
   }
   .tablet-my-list {
-    display: none;
+    display: none !important;
   }
   .top-btn-wrap {
     width: 90px;
@@ -125,7 +126,6 @@
     font-size: 3rem;
     cursor: pointer;
     background: none;
-
   }
   .mobile-wrap.active {
     visibility: visible;
@@ -148,11 +148,12 @@
     display: block !important;
   }
   .header-bar {
-    height: 4vh;
+    height: 2.5vh;
   }
-  .barSwiper .swiper-slide {
-    font-size: 1.3vh;
-    padding-top: 1.3vh;
+  .barSwiper .swiper-slide,
+  .detailSwiper .swiper-slide {
+    font-size: 1.5vh;
+    padding-top: 0.5vh;
   }
   .header-logo {
     width: 60%;
@@ -179,9 +180,6 @@
     width: 30px;
     height: 30px;
   }
-
-
-
 
   .btbannerSwiper .inner {
     padding: 5%;
@@ -227,12 +225,16 @@
     padding: 40px;
   }
   .review-content {
-    width: calc((100% - 6%) / 3);
+    width: calc((100% - 6%) / 2);
     border-radius: 10px;
     overflow: hidden;
     margin: 1% 0;
+    
   }
- 
+  .review-content img{
+    height: 80%;
+  }
+
   .footer-inner {
     padding: 0;
   }
@@ -253,10 +255,31 @@
   .footer-inner .mobile-ft {
     display: block;
   }
+  /* detail page */
+  .item{
+    width: 80%;
+    flex-direction: column;
+  }
+  .imgbox{
+    width: 100%;
+    text-align: center;
+  }
+  .txt1{
+    width: 100%;
+  }
+  .gd_benefitDl{
+    margin-top: 3%;
+  }
+  .gd_infoSet{
+    width: 80%;
+  }
+  .detail-box{
+    width: 80%;
+  }
 }
 @media screen and (max-width: 480px) {
-  html{
-    font-size: 6px;
+  html {
+    font-size: 8px;
   }
   .main-bt-banner {
     height: fit-content;
@@ -266,8 +289,8 @@
   }
   .btbannerSwiper {
     width: 90%;
-    border-top: 1px solid ;
-    border-bottom: 1px solid ;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
   }
   .btbannerSwiper .inner {
     height: 100%;
@@ -285,7 +308,6 @@
     line-height: 15px;
     white-space: nowrap;
     height: 25px;
-
   }
   .btbannerSwiper .inner .button {
     margin-top: 1px;
@@ -301,10 +323,10 @@
     line-height: 17px;
     letter-spacing: -0.3px;
   }
-  .mobile-none{
+  .mobile-none {
     display: none;
   }
-  .review-box{
+  .review-box {
     margin-bottom: 30px;
   }
 }

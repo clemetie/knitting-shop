@@ -3,13 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>뜨개 겨울</title>
-    <!-- css연결 -->
+    <!-- seo 엔진 최적화 -->
+    <!-- 웹페이지의 설명을 정의 -->
+    <meta name="description" content="Knitting 웹사이트입니다." />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta name="keywords" content="Knitting, Knit Controuctor" />
+    <!-- 웹페이지의 저자를 정의  -->
+    <meta name="author" content="Knitting" />
+    <!-- 소셜 미디어에서 페이지가 공유될때 사용되는 제목 -->
+    <meta property="og:title" content="Knitting~" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="Knitting 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
+     페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta
+      property="og:url"
+      content="https://clemetie.github.io/knitting_shop/"
+    />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <meta
+      property="og:image"
+      content="https://clemetie.github.io/knitting_shop/img/logo.png"
+    />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta property="og:description" content="Knitting 웹사이트입니다." />
+    <!-- 파비콘 적용하기이 -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="img/icon/favicon.svg" />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="img/icon/site.webmanifest" />
+    <!-- css초기화 구글에 파일 있음 cdn도 있다-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 리셋 css 먼저 링크 걸고 내 css 링크 걸어야 함  -->
     <link rel="stylesheet" href="css/detail.css" />
-    <!-- swiper 연결 -->
+    <link rel="stylesheet" href="css/respon.css" />
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 폰트어썸 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- xeicon연결 -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <!-- js연결 -->
     <script
@@ -17,10 +81,14 @@
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
+    <script src="js/detail.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Knitting~</title>
   </head>
   <body>
     <div class="header-bar">
-      <div class="swiper barSwiper">
+      <div class="swiper detailSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="#">▶ [모집] 뜨개 모임, 매주 목요일 19시</a>
@@ -39,11 +107,54 @@
         </div>
       </div>
     </div>
-    <div class="header-top">
-        <div class="header-logo">
-          <a href="#"><img src="img/logo.png" alt="logo" /> </a>
-        </div>
-        <ul class="tablet-my-list">
+    <header>
+      <div class="header-inner">
+        <!-- 헤더 상단 -->
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="#"><img src="img/logo.png" alt="logo" /> </a>
+          </div>
+
+          <!-- /Search/ -->
+          <div class="search-bar">
+            <input type="text" placeholder="Search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="mypage">
+            <ul class="my-list">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-right-to-bracket"></i>
+                  <p>Log In</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-receipt"></i>
+                  <p>Order</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-user"></i>
+                  <p>My Page</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Cart</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p>Shop</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="tablet-my-list">
             <li>
               <a href="#">
                 <p>Log In</p>
@@ -70,30 +181,272 @@
               </a>
             </li>
           </ul>
-    <div class="wrap">
-      <div class="banner">
-        <div class="imgbox">
-          <img src="img/Asset 4vol.10.png" alt="잡지 이미지" />
         </div>
-        <div class="txt">
-          <h1>털실 타래 vol.10 겨울호 ☃</h1>
-          <p>(주) 뜨개생활연구소 2024.12.21</p>
+        <div class="mb-xi" id="hamburger-menu">
+          <a href="#"> <i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="mobile-wrap">
+          <i class="fa-solid fa-rectangle-xmark close mobile-nav"></i>
+          <div id="mobile-nav" class="mobile-nav">
+            <ul class="gnb">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" placeholder="Search" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-right-to-bracket"></i>
+                  <p>Log In</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-receipt"></i>
+                  <p>Order</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-user"></i>
+                  <p>My Page</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Cart</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <p>Shop</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 헤더 하단 -->
+        <nav class="header-bt">
+          <ul class="menu-list">
+            <li class="best-tab"><a href="#">Best</a></li>
+            <li class="new-tab"><a href="#">New</a></li>
+            <li class="notice-tab"><a href="#">Notice</a></li>
+            <li class="review-tab"><a href="#">Review</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="top-wrap">
+        <div class="item">
+          <div class="imgbox">
+            <img src="img/Asset 4vol.10.png" alt="잡지 이미지" />
+          </div>
+          <div class="txt1">
+            <span id="spanGdKeynote" class="gd_keynote">
+              <span class="iconC deduct"><em class="txt">소득공제</em></span>
+
+              <a href="javascript:void(0);" class="lnk_series">털실타래</a>
+              <!-- 클래스24 상품일 경우 -->
+            </span>
+            <h1 class="title">털실 타래 vol.10 겨울호 ☃</h1>
+
+            <span class="gd_pubArea">
+              <span class="gd_auth" onclick="wiseLog('Pcode','003_010');">
+                <a href="index.html" target="_blank">(주) 뜨개생활연구소</a>
+                저/<a href="#" target="_blank">김보미</a>,
+                <a href="#" target="_blank">김수연</a>,
+                <a href="#" target="_blank">남가영</a>,
+                <a href="#" target="_blank">배혜영</a>
+                역
+              </span>
+              <em class="divi">|</em>
+              <span class="gd_pub"><a href="index.html">(주) knitt~</a></span>
+              <em class="divi">|</em>
+              <span class="gd_date">2025년 02월 03일</span>
+            </span>
+
+            <div class="gd_benefitGrp">
+              <dl class="gd_benefitDl">
+                <dt>
+                  <span class="ico_benefit"
+                    ><em class="ico bgGD"></em> 🎁 구매혜택</span
+                  >
+                </dt>
+                <dd>
+                  <p class="txt_benefit">
+                    <a href="#">눈사람 키링 도안 pdf </a>
+                  </p>
+                </dd>
+              </dl>
+            </div>
+            <div class="gd_infoTb">
+              <table summary="상품 가격정보 테이블">
+                <colgroup>
+                  <col width="110" />
+                  <col width="*" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">정가</th>
+                    <td>
+                      <span class=""><em class="yes_m">24,000원</em></span>
+                    </td>
+                  </tr>
+
+                  <tr class="accentRow">
+                    <th scope="row">판매가</th>
+                    <td>
+                      <span class="nor_price"
+                        ><em class="yes_m">21,600</em>원</span
+                      >
+                      (10% 할인)
+                    </td>
+                  </tr>
+
+                  <!-- 가격표시쿠폰 시작 -->
+                  <!-- 가격표시쿠폰 끝 -->
+                  <tr>
+                    <th scope="row">
+                      knitting포인트
+                      <a
+                        href="javascript:void(0);"
+                        onclick="openlayerNew('dPop_yesPointIs',this,true, 408);"
+                        class="bgYUI ico_comm ico_help"
+                        style="cursor: pointer"
+                        title="도움말"
+                      >
+                      </a>
+                    </th>
+                    <td>
+                      <ul class="gd_infoLi">
+                        <li><em class="yes_m"></em>1,200원 (5% 적립)</li>
+                        <li>
+                          5만원이상 구매 시 2천원 추가적립
+                          <a
+                            href="javascript:void(0);"
+                            onclick="openlayerNew('dPop_yesPointAddSave',this,true,368);"
+                            class="bgYUI ico_comm ico_help"
+                            style="cursor: pointer"
+                          ></a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="gd_actionCont">
+              <!-- 수량 -->
+              <dl class="gd_len">
+                <dt>수량</dt>
+                <dd>
+                  <button type="button" class="bgGD minus" id="minusbtn">
+                    <span class="text">-</span>
+                  </button>
+                  <span class="yesIpt ipt_wSizeF"
+                    ><input
+                      type="text"
+                      id="ordCnt_140104227"
+                      class="ac yes_m"
+                      value="1"
+                      onkeyup="checkGoodsCount()"
+                      maxlength="4"
+                  /></span>
+                  <button type="button" class="bgGD plus" id="plusbtn">
+                    <span class="text">+</span>
+                  </button>
+                </dd>
+              </dl>
+              <!-- 수량 끝-->
+              <!-- 결제 버튼 01 영역 시작 -->
+              <div class="cash">
+                <button>카트에 넣기</button>
+                <button>바로 구매</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="detail1"></div>
-      <div class="detail2"></div>
-      <div class="banner2"></div>
-      <div class="detail3"></div>
-      <div class="detail4"></div>
-    </div>
-    <script>
-      var swiper = new Swiper(".barSwiper", {
-        direction: "vertical",
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
+
+      <div id="infoset_introduce" class="gd_infoSet include-source-attribution">
+        <div class="tm_infoSet">
+          <h4 class="tit_txt">책소개</h4>
+        </div>
+
+        <div class="infoSetCont_wrap">
+          <div class="infoWrap_txt">
+            <div class="infoWrap_txtInner">
+              <textarea style="display: none" class="txtContentText">
+&lt;B&gt;전 세계에서 사랑받는 No.1 뜨개 &amp; 핸드메이드 잡지&lt;br/&gt;〈털실타래 Vol.10〉 옷장 속 옷과 매치해 입는 ‘스타일리시 니트’ 특집!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;〈털실타래〉는 현재 전 세계에서 큰 사랑을 받고 있는 최고의 뜨개 &amp; 핸드메이드 잡지입니다. 뜨개 전문기업 일본보그사에서 매 계절(봄, 여름, 가을, 겨울)마다 발간해온 수예 전문지로, 한국에서는 2022년 가을호를 시작으로 꾸준히 발행하고 있습니다. 이번에 출간되는 〈털실타래 Vol.10〉의 주제는 ‘스타일리시 니트’로, 옷장 속 옷과 매치해 다양하게 코디해 입을 수 있는 여러 가지 니트를 소개합니다.&lt;br/&gt;&lt;br/&gt;전 세계 니터와 디자이너에게 영감을 주는 새롭고 다양한 디자인 제안, 각 계절의 테마에 맞는 기획 기사, 글로벌 니트 패션을 선도하는 세련된 화보를 수록한 〈털실타래〉는 매호 총 40점이 넘는 니트 작품과 도안을 소개합니다. 이와 더불어 세계 니트 업계의 동향 뉴스, 유명 뜨개 작가 인터뷰, 새로 나온 실 소개, 행사 및 신간 정보, 한국어판만의 기획 기사 등을 수록하여 취미 니터는 물론 뜨개와 핸드메이드 업계의 전문가에 이르기까지, 손으로 만드는 즐거움을 사랑하는 많은 독자들에게 충실한 정보와 즐거운 영감을 전달하고자 합니다.                                    </textarea
+              >
+              <b
+                >전 세계에서 사랑받는 No.1 뜨개 &amp; 핸드메이드 잡지<br />〈털실타래
+                Vol.10〉 옷장 속 옷과 매치해 입는 ‘스타일리시 니트’ 특집!</b
+              ><br /><br />〈털실타래〉는 현재 전 세계에서 큰 사랑을 받고 있는
+              최고의 뜨개 &amp; 핸드메이드 잡지입니다. 뜨개 전문기업
+              일본보그사에서 매 계절(봄, 여름, 가을, 겨울)마다 발간해온 수예
+              전문지로, 한국에서는 2022년 가을호를 시작으로 꾸준히 발행하고
+              있습니다. 이번에 출간되는 〈털실타래 Vol.10〉의 주제는 ‘스타일리시
+              니트’로, 옷장 속 옷과 매치해 다양하게 코디해 입을 수 있는 여러
+              가지 니트를 소개합니다.<br /><br />전 세계 니터와 디자이너에게
+              영감을 주는 새롭고 다양한 디자인 제안, 각 계절의 테마에 맞는 기획
+              기사, 글로벌 니트 패션을 선도하는 세련된 화보를 수록한
+              〈털실타래〉는 매호 총 40점이 넘는 니트 작품과 도안을 소개합니다.
+              이와 더불어 세계 니트 업계의 동향 뉴스, 유명 뜨개 작가 인터뷰,
+              새로 나온 실 소개, 행사 및 신간 정보, 한국어판만의 기획 기사 등을
+              수록하여 취미 니터는 물론 뜨개와 핸드메이드 업계의 전문가에
+              이르기까지, 손으로 만드는 즐거움을 사랑하는 많은 독자들에게 충실한
+              정보와 즐거운 영감을 전달하고자 합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-inner">
+        <div class="detail-box">
+          <h2>상세이미지</h2>
+          <img src="img/Asset 4vol.10.png" alt="잡지 이미지" />
+
+          <img src="img/Asset 6detail.1.png" alt="detail1" class="detail" />
+          <img src="img/Asset 8detail.2.png" alt="detail2" class="detail" />
+          <img src="img/Asset 9detail.3.png" alt="detail3" class="detail" />
+          <img src="img/Asset 10detail.4 .png" alt="detail4" class="detail" />
+          <img src="img/Asset 11detail.5.png" alt="detail5" class="detail" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <div class="ft-left">
+          <div class="ft-logo">
+            <a href="#"><img src="img/logo.png" alt="로고" /></a>
+          </div>
+          <div class="ft-txtbox">
+            <p class="tel">02-1234-1234</p>
+            <address>
+              예금주:(주)뜨개생활연구소 <br class="mobile-ft" />
+              1210-654-65486 우리은행 <br />
+              주식회사뜨개생활연구소 I <br class="mobile-ft" />
+              서울특별시 마포구 집에 가고 싶어요
+            </address>
+            <p class="copy">ⓒ knitting online ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+
+        <div class="ft-quick">
+          <h2>Shopping Quick</h2>
+          <ul class="quick-list">
+            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">My Page</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
